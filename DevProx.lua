@@ -3664,15 +3664,14 @@ end
 if text == "السورس" or text == "سورس" then 
 local text =  [[
 Welcome To Source
-⌁︙DevProx TEAM
+⌁︙BaToT TEAM
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
 ⌁︙[Source Channel](https://t.me/Src_Web)
 
-⌁︙[Exp Source](https://t.me/Exp_Dev)
+⌁︙[Exp Source](https://t.me/Src_web)
 
-⌁︙[Developer](https://t.me/IQ_ABS)
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-⌁︙[Tws DevProx](https://t.me/IQA_bot)
+⌁︙[Tws BaToT](https://t.me/TwSLAlomdABot)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, 'md')
 end
