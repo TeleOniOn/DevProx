@@ -3795,7 +3795,7 @@ if text == "ايدي المجموعه" and ChCheck(msg) then Dev_Abs(msg.chat_id
 if text == 'مسح سحكاتي' or text == 'مسح تعديلاتي' or text == 'حذف سحكاتي' or text == 'حذف تعديلاتي' then DevAbs:del(DevProx..'Abs:EditMsg'..msg.chat_id_..msg.sender_user_id_) Dev_Abs(msg.chat_id_, msg.id_, 1, '࿈ 𖡻 تم حذف جميع تعديلاتك بنجاح' , 1, 'md') end
 if text == 'مسح جهاتي' or text == 'مسح اضافاتي' or text == 'حذف جهاتي' or text == 'حذف اضافاتي' then DevAbs:del(DevProx..'Abs:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_) Dev_Abs(msg.chat_id_, msg.id_, 1, '࿈ 𖡻 تم حذف جميع جهاتك المضافه' , 1, 'md') end
 --     Source AlOmDa     --
-if text == "المطور" then 
+if text == "المطوررر" then 
 local DevCh1 = DevAbs:get(DevProx.."DevAbs3")
 local DevText = DevAbs:get(DevProx.."DevText")
 if DevCh1 then DevCh = '\n࿈ 𖡻 *Dev Ch* ↬ ['..DevCh1..']' else DevCh = '' end
