@@ -135,7 +135,7 @@ DevId = Config.DevId or Config.SUDO
 SudoIds = {Config.SudoIds,1422493638} or {Config.sudo_users,1422493638}
 DevProx = Config.DevProx or Config.bot_id
 TokenBot = Config.TokenBot or Config.token
-NameBot = (DevAbs:get(DevProx..'Abs:NameBot') or 'بطوط')
+NameBot = (DevAbs:get(DevProx..'Abs:NameBot') or 'لوز')
 --     Source AlOmDa     --
 FilesPrint = "\27[35m".."\nAll Source Files Started ↬ ⤈ \n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\n"..'\27[m'
 FilesNumber = 0
@@ -989,8 +989,8 @@ end
 DevAbs:del(DevProx.."Del:Cmd:Group"..msg.chat_id_..":"..msg.sender_user_id_)
 return false
 end
-if text and text:match('^'..(DevAbs:get(DevProx..'Abs:NameBot') or "بطوط")..' ') then
-data.message_.content_.text_ = data.message_.content_.text_:gsub('^'..(DevAbs:get(DevProx..'Abs:NameBot') or "بطوط")..' ','')
+if text and text:match('^'..(DevAbs:get(DevProx..'Abs:NameBot') or "لوز")..' ') then
+data.message_.content_.text_ = data.message_.content_.text_:gsub('^'..(DevAbs:get(DevProx..'Abs:NameBot') or "لوز")..' ','')
 end
 if data.message_.content_.text_ then
 local NewCmmd = DevAbs:get(DevProx.."Set:Cmd:Group:New1"..msg.chat_id_..":"..data.message_.content_.text_)
@@ -2604,7 +2604,7 @@ end end
 if SecondSudo(msg) then
 if text == 'جلب نسخه الكروبات' and ChCheck(msg) or text == 'جلب نسخه احتياطيه' and ChCheck(msg) then
 local List = DevAbs:smembers(DevProx..'Abs:Groups') 
-local BotName = (DevAbs:get(DevProx.."Abs:NameBot") or 'بطوط')
+local BotName = (DevAbs:get(DevProx.."Abs:NameBot") or 'لوز')
 local GetJson = '{"BotId": '..DevProx..',"BotName": "'..BotName..'","GroupsList":{'  
 for k,v in pairs(List) do 
 LinkGroups = DevAbs:get(DevProx.."Abs:Groups:Links"..v)
@@ -2794,21 +2794,21 @@ end
 --     Source AlOmDa     --
 if ChatType == 'sp' or ChatType == 'gp'  then
 if text == 'بوت' or text == 'بوتت' then 
-NameBot = (DevAbs:get(DevProx..'Abs:NameBot') or 'بطوط')
+NameBot = (DevAbs:get(DevProx..'Abs:NameBot') or 'لوز')
 local DevProxTEAM = {"لتكول بوت اسمي "..NameBot.." 😒🔪","اسمي القميل "..NameBot.." 😚♥️","عندي اسم تره 😒💔","صيحولي "..NameBot.." كافي بوت 😒🔪","انت البوت لك 😒💔"} 
 DevAbs2 = math.random(#DevProxTEAM) 
 Dev_Abs(msg.chat_id_, msg.id_, 1, DevProxTEAM[DevAbs2] , 1, 'html') 
 return false
 end
 if text == 'اسم البوت' or text == 'البوت شنو اسمه' or text == 'شسمه البوت' or text == 'البوت شسمه' then
-NameBot = (DevAbs:get(DevProx..'Abs:NameBot') or 'بطوط') 
+NameBot = (DevAbs:get(DevProx..'Abs:NameBot') or 'لوز') 
 local DevProxTEAM = {"اسمي القميل "..NameBot.." 😚♥️","هلاا يروحيي وياكك "..NameBot.." 😻♥️"} 
 DevAbs2 = math.random(#DevProxTEAM) 
 Dev_Abs(msg.chat_id_, msg.id_, 1, DevProxTEAM[DevAbs2] , 1, 'html') 
 return false
 end
-if text and text == (DevAbs:get(DevProx..'Abs:NameBot') or 'بطوط') then 
-NameBot = (DevAbs:get(DevProx..'Abs:NameBot') or 'بطوط')
+if text and text == (DevAbs:get(DevProx..'Abs:NameBot') or 'لوز') then 
+NameBot = (DevAbs:get(DevProx..'Abs:NameBot') or 'لوز')
 local namebot = {'😸♥️ هلا كلبي وياك '..NameBot..' تفضل','ترةه مصختهاا احجيي شرايد 😕😒💔','اطلقق واحدد يصيح '..NameBot..' 😻♥️','خبصتت امنةة شتريدد عااد 🤧😒💔'} 
 name = math.random(#namebot) 
 Dev_Abs(msg.chat_id_, msg.id_, 1, namebot[name] , 1, 'html') 
@@ -3657,14 +3657,14 @@ end
 if text == "السورس" or text == "سورس" then 
 local text =  [[
 Welcome To Source
-⌁︙BaToT TEAM
+⌁︙AlomdA TEAM
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
 ⌁︙[Source Channel](https://t.me/Src_Web)
 
 ⌁︙[Exp Source](https://t.me/Src_web)
 
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-⌁︙[Tws BaToT](https://t.me/TwSLAlomdABot)
+⌁︙[Tws AlomdA](https://t.me/TwSLAlomdABot)
 ]]
 Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, 'md')
 end
@@ -9491,7 +9491,7 @@ if SecondSudo(msg) then
 if text == "تحديث السورس" or text == "تحديث سورس" then 
 Dev_Abs(msg.chat_id_, msg.id_, 1, '⌁︙جاري تحديث سورس تيم العمده', 1, 'md') 
 os.execute('rm -rf DevProx.lua') 
-os.execute('wget https://raw.githubusercontent.com/LOST2014/DevProx/master/DevProx.lua') 
+os.execute('wget https://raw.githubusercontent.com/TeamAlomdA/DevProx/master/DevProx.lua') 
 dofile('DevProx.lua') 
 io.popen("rm -rf ../.telegram-cli/*")
 print("\27[31;47m\n          ( تم تحديث السورس )          \n\27[0;34;49m\n") 
@@ -9580,12 +9580,12 @@ end
 send(msg.chat_id_, msg.id_,Files)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/LOST2014/DevProxFiles/master/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/TeamAlomdA/DevProxFiles/master/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n⌁︙قائمة ملفات متجر سورس بطوط\n⌁︙الملفات المتوفره حاليا ↫ ⤈\n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\n"
+local TextS = "\n⌁︙قائمة ملفات متجر سورس العمده\n⌁︙الملفات المتوفره حاليا ↫ ⤈\n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\n"
 local TextE = "┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\n⌁︙علامة ↫ (✔) تعني الملف مفعل\n⌁︙علامة ↫ (✖️) تعني الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -9612,7 +9612,7 @@ end
 if text and text:match("^(تعطيل ملف) (.*)(.lua)$") then
 local FileGet = {string.match(text, "^(تعطيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/LOST2014/DevProxFiles/master/DevProxFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/TeamAlomdA/DevProxFiles/master/DevProxFiles/"..FileName)
 if Res == 200 then
 os.execute("rm -fr Files/"..FileName)
 send(msg.chat_id_, msg.id_,"\n⌁︙الملف ↫ *"..FileName.."*\n⌁︙تم تعطيله وحذفه من البوت بنجاح") 
@@ -9624,7 +9624,7 @@ end
 if text and text:match("^(تفعيل ملف) (.*)(.lua)$") then
 local FileGet = {string.match(text, "^(تفعيل ملف) (.*)(.lua)$")}
 local FileName = FileGet[2]..'.lua'
-local GetJson, Res = https.request("https://raw.githubusercontent.com/LOST2014/DevProxFiles/master/DevProxFiles/"..FileName)
+local GetJson, Res = https.request("https://raw.githubusercontent.com/TeamAlomdA/DevProxFiles/master/DevProxFiles/"..FileName)
 if Res == 200 then
 local ChekAuto = io.open("Files/"..FileName,'w+')
 ChekAuto:write(GetJson)
