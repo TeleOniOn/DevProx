@@ -1,4 +1,4 @@
-# <p align="center" > تنصيب سورس ديف بروكس
+# <p align="center" > تنصيب سورس تيم العمده
 # <p align="center" > ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
 # <p align="center" > ⤈ ↫ كود التنصيب الاول مع المكاتب ↬ ⤈
 # <p align="center" > `git clone https://github.com/LOST2014/DevProx/;cd DevProx;chmod +x DevProx.sh;./DevProx.sh install`
@@ -22,5 +22,5 @@
 # <p align="center" > ⤈ ↫ كود تغير ايدي المطور الاساسي وتوكن البوت ↬ ⤈
 # <p align="center" > `cd DevProx;rm -rf config.lua;./Run`
 # <p align="center" > ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-# <p align="center" > [Source Ch](https://t.me/HH14H) • [قناة السورس](https://t.me/HH14H)
-# <p align="center" > [Source Prog](https://t.me/IQ_ABS) • [مبرمج السورس](https://t.me/SRC_SEB)
+# <p align="center" > [Source Ch](https://t.me/src_web) • [قناة السورس](https://t.me/src_web)
+# <p align="center" > [Source Prog](https://t.me/xx19x) • [مبرمج السورس](https://t.me/xx19x)
