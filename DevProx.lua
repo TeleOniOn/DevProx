@@ -938,7 +938,7 @@ end
 
 
 
--      New User Add      --
+--      New User Add      --
 elseif msg.content_.ID == "MessageChatAddMembers" then
 if not DevAbs:get(DevProx..'Abs:Lock:BotWelcome') then 
 tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = DevProx,offset_ = 0,limit_ = 1},function(extra,abbas,success) 
