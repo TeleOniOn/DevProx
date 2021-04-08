@@ -288,7 +288,6 @@ end
 
 
 
-end
 --     Source AlOmDa     --
 function resolve_username(username,cb)
 tdcli_function ({
