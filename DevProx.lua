@@ -950,11 +950,7 @@ getUser(msg.sender_user_id_,get_welcome)
 end
 --     Source AlOmDa     --
 --      New User Add      --
-elseif msg.content_.ID == "MessageChatAddMembers" then
-if not DevAbs:get(DevProx..'Abs:Lock:BotWelcome') then 
-tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = DevProx,offset_ = 0,limit_ = 1},function(extra,abbas,success) 
-for i=0,#msg.content_.members_ do    
-BotWelcome = msg.content_.members_[i].id_    
+
 if BotWelcome and BotWelcome == tonumber(DevProx) then 
 if DevAbs:sismember(DevProx..'Abs:Groups',msg.chat_id_) then
 BotText = "مفعله في السابق\n࿈ 𖡻 ارسل ↫ الاوامر واستمتع بالمميزيات"
