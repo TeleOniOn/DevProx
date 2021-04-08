@@ -1584,7 +1584,7 @@ if #List == 0 then
 text = "࿈ 𖡻 *لا يوجد منظفين*"
 end
 Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, "md")
-end end 
+
 
 
 
