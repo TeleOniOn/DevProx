@@ -935,9 +935,10 @@ end
 
 
 
-
-
-
+if DevAbs:get(DevProx.."Abs:Lock:Welcome"..msg.chat_id_) then
+getUser(msg.sender_user_id_,get_welcome)
+end
+--     Source AlOmDa     --
 --      New User Add      --
 elseif msg.content_.ID == "MessageChatAddMembers" then
 if not DevAbs:get(DevProx..'Abs:Lock:BotWelcome') then 
