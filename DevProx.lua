@@ -1425,7 +1425,6 @@ elseif AbsDelAll(msg.sender_user_id_,msg.chat_id_) == 'manager' then
 DevAbs:srem(DevProx..'Abs:Admins:'..msg.chat_id_, result.id_)
 DevAbs:srem(DevProx..'Abs:VipMem:'..msg.chat_id_, result.id_)
 end
-else
 Dev_Abs(msg.chat_id_, msg.id_, 1, '࿈ 𖡻 المعرف غير صحيح*', 1, 'md')
 end
 end
