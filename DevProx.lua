@@ -934,7 +934,17 @@ end
 
 
 
-
+function get_welcome(extra,result,success)
+if DevAbs:get(DevProx..'Abs:Groups:Welcomes'..msg.chat_id_) then
+text = DevAbs:get(DevProx..'Abs:Groups:Welcomes'..msg.chat_id_)
+else
+text = '• نورت حبي \n• [firstname lastname] \n• [@username]'
+end
+local text = text:gsub('firstname',(result.first_name_ or ''))
+local text = text:gsub('lastname',(result.last_name_ or ''))
+local text = text:gsub('username',(result.username_ or 'Dev_Prox'))
+Dev_Abs(msg.chat_id_, msg.id_, 1, text, 1, 'md')
+end 
 if DevAbs:get(DevProx.."Abs:Lock:Welcome"..msg.chat_id_) then
 getUser(msg.sender_user_id_,get_welcome)
 end
