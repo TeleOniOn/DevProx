@@ -965,7 +965,6 @@ else
 send(msg.chat_id_,msg.id_,AbsText)
 end 
 end   
-end
 end,nil)
 end
 if DevAbs:get(DevProx..'Abs:Lock:TagServr'..msg.chat_id_) then
