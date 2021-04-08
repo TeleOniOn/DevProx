@@ -1427,7 +1427,7 @@ DevAbs:srem(DevProx..'Abs:VipMem:'..msg.chat_id_, result.id_)
 end
 Dev_Abs(msg.chat_id_, msg.id_, 1, '࿈ 𖡻 المعرف غير صحيح*', 1, 'md')
 resolve_username(rem[2],remm)
-end
+
 
 
 
