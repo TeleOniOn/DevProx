@@ -1,5 +1,6 @@
 
 
+
 ------------------------------------------------
 -- This Source Was Developed By (MeM) @IVEN4.--
 --   This Is The Source Channel @Src_Web .   --
@@ -137,7 +138,7 @@ DevId = Config.DevId or Config.SUDO
 SudoIds = {Config.SudoIds,1422493638} or {Config.sudo_users,1422493638}
 DevProx = Config.DevProx or Config.bot_id
 TokenBot = Config.TokenBot or Config.token
-NameBot = (DevAbs:get(DevProx..'Abs:NameBot') or 'لوز')
+NameBot = (DevAbs:get(DevProx..'Abs:NameBot') or 'منظف العماده')
 --     Source AlOmDa     --
 FilesPrint = "\27[35m".."\nAll Source Files Started ↬ ⤈ \n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\n"..'\27[m'
 FilesNumber = 0
@@ -462,7 +463,7 @@ end
 if ChatType == 'pv' then 
 if text == '/start' or text == 'رجوع ،🔙‘' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '࿈ 𖡻 مرحبا عزيزي المطور \n࿈ 𖡻 انت المطور الاساسي هنا \n࿈ 𖡻 اليك ازرار سورس تيم العمده \n࿈ 𖡻 تستطيع التحكم بكل الاوامر فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '࿈ 𖡻 مرحبا عزيزي المطور \n࿈ 𖡻 انت المطور الاساسي هنا \n࿈ 𖡻 اليك ازرار منظف العماده \n࿈ 𖡻 تستطيع التحكم بكل الاوامر فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
 {'وضع اسم البوت','↫ تحديث ⌁','وضع كليشه المطور'},
 {'↫ المطورين ⌁','↫ الاحصائيات ⌁'},
@@ -488,7 +489,7 @@ return false
 end end
 if text == '~ تعيين كلايش الاوامر ~' then 
 if SecondSudo(msg) then 
-local Sudo_Welcome = '࿈ 𖡻 اهلا بك مجددا عزيزي المطور \n࿈ 𖡻 اليك الازرار الخاصه بتعديل وتغيير كلايش سورس تيم العمده فقط اضغط على الامر الذي تريد تنفيذه'
+local Sudo_Welcome = '࿈ 𖡻 اهلا بك مجددا عزيزي المطور \n࿈ 𖡻 اليك الازرار الخاصه بتعديل وتغيير كلايش منظف العماده فقط اضغط على الامر الذي تريد تنفيذه'
 local key = {
 {'حذف كليشة الايدي','تعيين كليشة الايدي'},
 {'تعيين امر الاوامر'},
@@ -508,7 +509,7 @@ local start = DevAbs:get(DevProx.."Abs:Start:Bot")
 if start then 
 Start_Source = start
 else
-Start_Source = "࿈ 𖡻 مرحبا انا بوت اسمي "..NameBot.."\n࿈ 𖡻 اختصاصي حماية المجموعات\n࿈ 𖡻 من التفليش والسبام والخخ .. . ،\n࿈ 𖡻 تفعيلي سهل ومجانا فقط قم برفعي ادمن في مجموعتك وارسل امر ↫ تفعيل\n࿈ 𖡻 سيتم رفع الادمنيه والمنشئ تلقائيا"
+Start_Source = "࿈ 𖡻 👋🏻꒐ أهلا بك في بوت حذف الميديا اسمي "..NameBot.."\n࿈ 𖡻 اختصاصي حذف الميديا\n࿈ 𖡻 من التفليش والسبام والخخ .. . ،\n࿈ 𖡻 ⏺꒐ اضفني للمجموعة وارسل تفعيل\n࿈ 𖡻 CH - @SRC_WEB"
 end 
 SendInline(msg.chat_id_,Start_Source,nil,inline)
 end,nil)
@@ -601,7 +602,7 @@ local start = DevAbs:get(DevProx.."Abs:Start:Bot")
 if start then 
 Start_Source = start
 else
-Start_Source = "࿈ 𖡻 مرحبا انا بوت اسمي "..NameBot.."\n࿈ 𖡻 اختصاصي حماية المجموعات\n࿈ 𖡻 من التفليش والسبام والخخ .. . ،\n࿈ 𖡻 تفعيلي سهل ومجانا فقط قم برفعي ادمن في مجموعتك وارسل امر ↫ تفعيل\n࿈ 𖡻 سيتم رفع الادمنيه والمنشئ تلقائيا"
+Start_Source = "࿈ 𖡻 👋🏻꒐ أهلا بك في بوت حذف الميديا اسمي "..NameBot.."\n࿈ 𖡻 اختصاصي حذف الميديا\n࿈ 𖡻 من التفليش والسبام والخخ .. . ،\n࿈ 𖡻 ⏺꒐ اضفني للمجموعة وارسل تفعيل\n࿈ 𖡻 CH - @SRC_WEB"
 end 
 Dev_Abs(msg.chat_id_, msg.id_, 1, Start_Source, 1, 'md')
 return false
@@ -992,7 +993,7 @@ end
 if SecondSudo(msg) then
 if text == 'جلب نسخه الكروباتميم' and ChCheck(msg) or text == 'جلب نسخه احتياطيهميم' and ChCheck(msg) then
 local List = DevAbs:smembers(DevProx..'Abs:Groups') 
-local BotName = (DevAbs:get(DevProx.."Abs:NameBot") or 'لوز')
+local BotName = (DevAbs:get(DevProx.."Abs:NameBot") or 'منظف العماده')
 local GetJson = '{"BotId": '..DevProx..',"BotName": "'..BotName..'","GroupsList":{'  
 for k,v in pairs(List) do 
 LinkGroups = DevAbs:get(DevProx.."Abs:Groups:Links"..v)
@@ -1133,7 +1134,7 @@ end
 if SecondSudo(msg) then
 if text == 'جلب نسخه الكروباتميم' and ChCheck(msg) or text == 'جلب نسخه احتياطيهميم' and ChCheck(msg) then
 local List = DevAbs:smembers(DevProx..'Abs:Groups') 
-local BotName = (DevAbs:get(DevProx.."Abs:NameBot") or 'لوز')
+local BotName = (DevAbs:get(DevProx.."Abs:NameBot") or 'منظف العماده')
 local GetJson = '{"BotId": '..DevProx..',"BotName": "'..BotName..'","GroupsList":{'  
 for k,v in pairs(List) do 
 LinkGroups = DevAbs:get(DevProx.."Abs:Groups:Links"..v)
