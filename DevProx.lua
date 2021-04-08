@@ -964,7 +964,6 @@ sendPhoto(msg.chat_id_,msg.id_,0,1,nil,AbsPhoto,AbsText)
 else 
 send(msg.chat_id_,msg.id_,AbsText)
 end 
-end,nil)
 end
 if DevAbs:get(DevProx..'Abs:Lock:TagServr'..msg.chat_id_) then
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})
